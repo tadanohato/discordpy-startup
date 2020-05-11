@@ -15,7 +15,7 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def tdnht(ctx):
-    await ctx.send('あほ死ね')
+    await ctx.send('hato')
 
 
 bot.run(token)
