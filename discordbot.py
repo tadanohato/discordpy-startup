@@ -2,6 +2,8 @@ from discord.ext import commands
 import os
 import traceback
 
+import random
+
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
@@ -16,6 +18,9 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def tdnht(ctx):
     await ctx.send('hato')
-
-
+@bot.command()
+async def ルーレット(ctx):
+    unko = random.randint(1,8)
+    print (str(unko) + 'です！')
+    
 bot.run(token)
