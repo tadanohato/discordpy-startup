@@ -22,8 +22,8 @@ async def ping(ctx):
 async def tdnht(ctx):
     await ctx.send('hato')
 @bot.command()
-async def maware(ctx):
+async def tintin(ctx):
     unko = random.randint(1,8)
-    print (str(unko) + 'です！')
+    await ctx.send(str(unko) + 'です')
     
 bot.run(token)
